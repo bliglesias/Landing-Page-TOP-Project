@@ -1,10 +1,12 @@
 * {
   box-sizing: border-box;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont,
    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
    'Open Sans', 'Helvetica Neue', sans-serif;
-   padding: 0;
-   margin: 0;
+  
+  padding: 0;
+  margin: 0;
 }
 
 /* GENERAL FORMAT, THIS CAN BE SIMPLIFIED BY 
@@ -32,6 +34,116 @@ ABSTRACTION OF FOOTER,MAIN,HEADER
     flex: 100%;
   } */
 
+/* Assignment starts here */
+.hero-container, .footer-container, .header-container{
+  background-color: #1F2937;
+}
+.hero-text p{
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+.hero-text sub, .navbar ul{
+  font-size: 18px;
+  color: #E5E7EB;
+}
+.hero-image{
+  font-size: 24px;
+  color: #F9FAF8;
+}
+button, .CTA-container{
+  background-color: #3882F6;
+}
+.info-container h2{
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+}
+.quote-container{
+  background-color: #e5e7eb;
+}
+.quote-text{
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
+}
+/* end of imported assignment values */
 
+/* lets flex */
+/* this is the main body */
+.container{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.header-container{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #E5E7EB;
+}
+.navbar ul{
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+}
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 10%;
+  
+}
+.hero-text, .hero-image{
+  display: flex;
+  padding: 20px;
+  width: 500px;
+  flex: 1 1 auto;
+  /* margin:200px; */
+}
+.hero-text{
+  flex-flow: column wrap;
+  outline: 2px solid;
+}
+.hero-text button{
+  width: 100px;
+  height: 25px;
+  border-radius: 30px;
+  margin: 10px;
+  color: white;
+}
+.hero-image{
+  outline: 2px solid;
+  padding:52px;
+  justify-content: center;
+  align-content: center;
+  background-color: grey;
+}
+.hero-image ins{
+  align-self: center;
+  text-align: center;
+}
 
+/* gallery */
+.info-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;    /* Put cards in a row */
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;       /* Adds space below the title */
+  /* outline: 5px solid blue; */
+}
+.info-img {
+  display: flex;
+  flex-flow: column nowrap; /* Stacks image on top of text */
+  align-items: center;
+  width: 150px;
+  text-align: center;
+  outline: 5px solid blue;
+}
 
