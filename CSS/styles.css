@@ -51,7 +51,7 @@ ABSTRACTION OF FOOTER,MAIN,HEADER
   font-size: 24px;
   color: #F9FAF8;
 }
-button, .CTA-container{
+button, .CTA-info{
   background-color: #3882F6;
 }
 .info-container h2{
@@ -145,4 +145,117 @@ ul li{
   flex: 1 1 auto;
 }
 
-/* Hero section done */
+/* GALLERY */
+h2{
+  text-align: center;
+  /* padding-top: 100px; */
+  padding-bottom: 32px;
+}
+/* gallery box */
+.info-container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 100px
+  /* outline: 10px solid green; */
+}
+.gallery{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* justify-content: space-around; */
+  gap: 32px;
+
+  
+}
+.info-img{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px
+}
+.info-img img{
+  outline: 5px solid lightskyblue;
+  width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+.info-img p{
+  /* align-items: center; */
+  text-align: center;
+}
+/* Quote */
+.quote-container{
+  display: flex;
+  padding: 150px;
+  flex-flow: column wrap;
+  
+  
+}
+.quote-text{
+  display: flex;
+  width: 1000px;
+  /* justify-content: center; */
+  margin:0 auto;
+}
+.quote-author{
+  display: flex;
+  justify-content: center;
+  /* padding: 100px */
+}
+.quote-author strong{
+  /* outline: 1px solid blue; */
+  /* margin: 100px */
+  margin-left: 500px;
+}
+
+/* CTA */
+.CTA-container{
+  /* outline: 10px solid green; */
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 100px 700px;
+  color: #F9FAF8;
+}
+.cta-parent{
+  display: flex;
+  /* outline: 10px solid red; */
+  border-radius: 10px;
+  background-color: #3882F6;
+  
+  
+  gap: 1000px;
+  /* padding: 30px 700px 30px 700px; */
+  padding: 100px 300px;
+  /* color: #F9FAF8; */
+  /* justify-content: center; */
+
+}
+.CTA-info{
+  /* outline: 10px solid black; */
+  /* display: flex; */
+  /* flex-direction: row wrap; */
+  width: 1000px;
+  height: 100px;
+}
+.CTA-button{
+  display: flex;
+  /* outline: 10px solid black; */
+  height: 100px;
+  width: 300px;
+}
+.CTA-button button{
+  width: inherit;
+  border-radius: 30px;
+  color: #F9FAF8;
+}
+
+/* Footer */
+.footer-container{
+  display: flex;
+  padding: 32px;
+  color: #F9FAF8;
+  justify-content: center;
+}
+
+
