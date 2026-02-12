@@ -73,77 +73,31 @@ button, .CTA-container{
 /* this is the main body */
 .container{
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+
+  /* this pushes all content away from the walls */
+  padding: 30px;
 }
 .header-container{
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  justify-content: space-around;
   align-items: center;
+  /* outline: 12px solid green; */
   color: #E5E7EB;
-}
-.navbar ul{
-  display: flex;
-  gap: 32px;
-  list-style-type: none;
-}
-.hero-container{
-  display: flex;
-  justify-content: space-between;
-  padding: 100px 10%;
   
 }
-.hero-text, .hero-image{
+.header-container .navbar{
+  padding: 10px;
+  /* outline: 12px solid blue; */
+}
+.header-container .navbar ul{
   display: flex;
-  padding: 20px;
-  width: 500px;
-  flex: 1 1 auto;
-  /* margin:200px; */
+  flex-direction: row;
+  list-style-type: none;
+  /* outline: 12px solid red; */
 }
-.hero-text{
-  flex-flow: column wrap;
-  outline: 2px solid;
-}
-.hero-text button{
-  width: 100px;
-  height: 25px;
-  border-radius: 30px;
-  margin: 10px;
-  color: white;
-}
-.hero-image{
-  outline: 2px solid;
-  padding:52px;
-  justify-content: center;
-  align-content: center;
-  background-color: grey;
-}
-.hero-image ins{
-  align-self: center;
-  text-align: center;
-}
-
-/* gallery */
-.info-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 48px 0;
-}
-.gallery {
-  display: flex;
-  flex-direction: row;    /* Put cards in a row */
-  justify-content: center;
-  gap: 32px;
-  margin-top: 32px;       /* Adds space below the title */
-  /* outline: 5px solid blue; */
-}
-.info-img {
-  display: flex;
-  flex-flow: column nowrap; /* Stacks image on top of text */
-  align-items: center;
-  width: 150px;
-  text-align: center;
-  outline: 5px solid blue;
+ul li{
+  padding: 10px;
 }
 
