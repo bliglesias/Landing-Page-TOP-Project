@@ -69,7 +69,11 @@ button, .CTA-container{
 }
 /* end of imported assignment values */
 
-/* lets flex */
+/* lets flex 
+
+Notes: outlines are because i didnt want to open DevTools
+
+*/
 /* this is the main body */
 .container{
   display: flex;
@@ -100,4 +104,45 @@ button, .CTA-container{
 ul li{
   padding: 10px;
 }
+/* Hero stuff */
+.hero-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* outline: 10px solid red; */
+  gap: 100px;
+}
+.hero-text{
+  /* outline: 10px solid white; */
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
 
+  justify-content: center;
+  
+}
+.hero-text button{
+  height: 10px;
+  border-radius: 15px;
+  width: 100px;
+  height: 32px;
+  color: #E5E7EB;
+
+  /* align-items: center; */
+}
+.hero-image{
+  display: flex;
+  /* outline: 10px solid blue; */
+  align-self: center;
+  /* background-color: gray; */
+  /* flex: 1 1 auto; */
+  padding-bottom: 10px;
+}
+.hero-image img{
+  background-color: gray;
+  /* margin: 100px; */
+  max-width: 300px;
+  flex: 1 1 auto;
+}
+
+/* Hero section done */
